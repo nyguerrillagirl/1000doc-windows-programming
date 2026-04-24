@@ -14,13 +14,13 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{387d6bf0-d696-4b54-8f28-0f8aa73fac9b}</UniqueIdentifier>
+      <UniqueIdentifier>{07597296-9325-470f-9d9f-3a5caef308fc}</UniqueIdentifier>
     </Filter>
     <Filter Include="libs">
-      <UniqueIdentifier>{ec5f5d84-d3aa-4963-820d-533f01e9acb1}</UniqueIdentifier>
+      <UniqueIdentifier>{81885ee8-0ece-421d-8ce4-b53f24f1ecd8}</UniqueIdentifier>
     </Filter>
     <Filter Include="dlls">
-      <UniqueIdentifier>{3105c6de-eab3-42cf-8d81-18ce40f1f940}</UniqueIdentifier>
+      <UniqueIdentifier>{931a47dd-695c-41de-bdac-8906879ef4e0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,12 +29,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\GLFW\glfw3.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GLFW\glfw3native.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="include\GL\eglew.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -47,6 +41,12 @@
     <ClInclude Include="include\GL\wglew.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3native.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="libs\glew32.lib">
@@ -56,6 +56,9 @@
       <Filter>libs</Filter>
     </Library>
     <Library Include="libs\glfw3.lib">
+      <Filter>libs</Filter>
+    </Library>
+    <Library Include="libs\glfw3_mt.lib">
       <Filter>libs</Filter>
     </Library>
     <Library Include="libs\glfw3dll.lib">
