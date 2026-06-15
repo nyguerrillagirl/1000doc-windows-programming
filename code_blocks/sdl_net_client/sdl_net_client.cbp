@@ -2,22 +2,24 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="first_sdl_project" />
+		<Option title="sdl_net_client" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/first_sdl_project" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/sdl_net_client" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="C:/libs/sdl/SDL2" />
 				</Compiler>
 				<Linker>
 					<Add library="mingw32" />
 					<Add library="SDL2main" />
 					<Add library="SDL2" />
+					<Add library="SDL2_net" />
 					<Add library="user32" />
 					<Add library="gdi32" />
 					<Add library="winmm" />
@@ -26,12 +28,13 @@
 					<Add library="oleaut32" />
 					<Add library="version" />
 					<Add library="uuid" />
+					<Add directory="C:/libs/sdl/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/first_sdl_project" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/sdl_net_client" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -44,22 +47,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="C:/libs/sdl/include" />
 		</Compiler>
-		<Linker>
-			<Add library="mingw32" />
-			<Add library="SDL2main" />
-			<Add library="SDL2" />
-			<Add library="user32" />
-			<Add library="gdi32" />
-			<Add library="winmm" />
-			<Add library="imm32" />
-			<Add library="ole32" />
-			<Add library="oleaut32" />
-			<Add library="version" />
-			<Add library="uuid" />
-			<Add directory="C:/libs/sdl/lib" />
-		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
